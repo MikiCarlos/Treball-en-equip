@@ -1,8 +1,3 @@
-// Exemple bàsic de Phaser
-function preload() {
-    // Carregar recursos (el teu company ho afegirà)
-}
-
 function create() {
     this.add.text(300, 250, 'Joc carregat!', { fontSize: '32px', fill: '#fff' });
 
@@ -30,7 +25,3 @@ function pintarTitolPausaColorit() {
     }
 }
 
-
-function update() {
-    // Lògica de joc contínua
-}

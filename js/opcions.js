@@ -49,9 +49,4 @@ window.onload = () => {
     // Generar boles decoratives segons dificultat seleccionada
     generaBoles(dificultatSeleccionada);
 
-    btnJugar.addEventListener('click', () => {
-        console.log('Dificultat escollida:', dificultatSeleccionada);
-        // Aquí pots iniciar el joc i fer servir la dificultat
-    });
-
 };
