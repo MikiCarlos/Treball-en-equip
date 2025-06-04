@@ -1,0 +1,10 @@
+p {
+    color: white;
+    text-align: center;
+    max-width: 70%;
+    margin: 8px auto;
+}
+
+b {
+    color: red;
+}
