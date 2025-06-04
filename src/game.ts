@@ -1,10 +1,7 @@
 import Phaser from 'phaser';
 import { formatTime, getSettingsByDifficulty } from './utils';
 import { Grid } from './grid';
-import {
-    COLS, HEIGHT, IMAGE_SIZE, MAX_ROWS, ROWS, WIDTH, SPECIAL_BUBBLE_COLOR,
-    POINTS_PER_BUBBLE, MIN_BUBBLES_TO_POP
-} from './constants';
+import { COLS, HEIGHT, IMAGE_SIZE, MAX_ROWS, ROWS, WIDTH, SPECIAL_BUBBLE_COLOR, POINTS_PER_BUBBLE, MIN_BUBBLES_TO_POP } from './constants';
 
 export class MainGame extends Phaser.Scene {
     scoreText!: Phaser.GameObjects.Text;
@@ -26,7 +23,7 @@ export class MainGame extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('bubble', '/bubble.png');
+        this.load.image('bubble', 'bubble.png');
     }
 
     getActiveColors(): number[] {
