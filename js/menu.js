@@ -39,7 +39,7 @@ function generaBoles(dificultat) {
 // Generar boles decoratives segons dificultat seleccionada
 generaBoles(dificultatSeleccionada);
 
-$play.addEventListener('click', () => location.assign('./src/joc.html'));
+$play.addEventListener('click', () => location.assign('joc.html'));
 $options.addEventListener('click', () => location.assign('opcions.html'));
 $instructions.addEventListener('click', () => location.assign('instructions.html'));
 $quit.addEventListener('click', () => location.assign('adeu.html'));

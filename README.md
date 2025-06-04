@@ -36,6 +36,8 @@ Ens ha semblat interesant però prefeririem fer servir un motor de jocs "normal"
 
 El principal problema que ens hem trobat ha sigut intentar fer que el snapping de les bombolles quedes bé però, no ho hem aconseguit tal qual ho voliem.
 
+També hem tingut problemes amb els marges del tauler, les boles no quedaven ben enganxades i es produient bugs.
+
 ## Manual d’usuari
 
 Primer ens trobariem amb un menú principal, en el qual trobem 4 botons.

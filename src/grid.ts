@@ -1,14 +1,14 @@
 export class Grid {
-    #rows: number;
-    #cols: number;
-    #maxRows: number;
+    // #rows: number;
+    // #cols: number;
+    // #maxRows: number;
 
     #board: Array<Array<Phaser.Types.Physics.Arcade.ImageWithDynamicBody | null>>;
 
-    constructor(rows: number, cols: number, maxRows: number) {
-        this.#rows = rows;
-        this.#cols = cols;
-        this.#maxRows = maxRows;
+    constructor(_rows: number, cols: number, maxRows: number) {
+        // this.#rows = rows;
+        // this.#cols = cols;
+        // this.#maxRows = maxRows;
 
         this.#board = Array.from({ length: maxRows }, () => Array(cols).fill(null));
     }

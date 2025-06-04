@@ -35,4 +35,4 @@ function generaBoles(dificultat: string) {
 // Generar boles decoratives segons dificultat seleccionada
 generaBoles(dificultatSeleccionada);
 
-document.querySelector('button#menu')?.addEventListener('click', () => location.assign('../'));
+document.querySelector('button#menu')?.addEventListener('click', () => location.assign('index.html'));

@@ -6,8 +6,8 @@
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joc</title>
-    <link rel="stylesheet" href="../css/joc.css">
-    <script type="module" src="./config.ts"></script>
+    <link rel="stylesheet" href="./css/joc.css">
+    <script type="module" src="./src/config.ts"></script>
 </head>
 
 <body>
@@ -25,7 +25,6 @@
     </div>
 
     <!-- Script del joc -->
-    <script src="../js/joc.js"></script>
     <script>
         // ESC per mostrar / ocultar el menú de pausa
         document.addEventListener('keydown', (e) => {
@@ -42,7 +41,7 @@
 
 
         function tornarAlMenu() {
-            window.location.assign("/")
+            window.location.assign("index.html")
         }
 
         function tornarAComençar() {
