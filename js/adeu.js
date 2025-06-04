@@ -8,7 +8,7 @@ window.onload = () => {
         bola.classList.add('bola');
 
         const color = colors[Math.floor(Math.random() * colors.length)];
-        bola.classList.add(color); // segueix fent servir les classes de background
+        bola.classList.add(color); 
 
         bola.style.top = Math.floor(Math.random() * 90) + '%';
         bola.style.left = Math.floor(Math.random() * 90) + '%';
