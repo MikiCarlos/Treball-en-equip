@@ -40,9 +40,9 @@ El principal problema que ens hem trobat ha sigut intentar fer que el snapping d
 
 Primer ens trobariem amb un menú principal, en el qual trobem 4 botons.
 
-- Jugar: ens permet jugar al joc. Consisteix en petar totes les bombolles del tauler. Sembla fàcil pero no ho es.
-- Opcions: ens permet triar el nivell de dificultat del joc. Els nivells de dificultat són **fàcil**, **mitjana** i **dificil**. Com més alt el nivell, més colors de bombolles hi ha i menys boles especials tenim.
-- Instruccions: ens porta a una pàgina que ens explicar com funciona el joc.
-- Sortir: ens permet "sortir" del joc.
+- **Jugar**: ens permet jugar al joc. Consisteix en petar totes les bombolles del tauler. Sembla fàcil pero no ho es.
+- **Opcions**: ens permet triar el nivell de dificultat del joc. Els nivells de dificultat són **fàcil**, **mitjana** i **dificil**. Com més alt el nivell, més colors de bombolles hi ha i menys boles especials tenim.
+- **Instruccions**: ens porta a una pàgina que ens explicar com funciona el joc.
+- **Sortir**: ens permet "sortir" del joc.
 
 > Fet per Carlos Pendino i Mikolaj Jaworski

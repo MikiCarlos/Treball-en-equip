@@ -1,11 +1,7 @@
-const $decoracio = document.querySelector('.decoració');
-const $play = document.getElementById('play');
-const $options = document.getElementById('options');
-const $instructions = document.getElementById('instructions');
-const $quit = document.getElementById('quit');
+const $decoracio = document.querySelector('.decoració')!;
 
 const colors = ['vermella', 'blava', 'groga', 'verda'];
-const quantitats = {
+const quantitats: any = {
     facil: 20,
     mitjana: 40,
     dificil: 80
@@ -14,7 +10,7 @@ const quantitats = {
 // Obtenir dificultat de localStorage o per defecte
 const dificultatSeleccionada = localStorage.getItem('dificultatSeleccionada') || 'dificil';
 
-function generaBoles(dificultat) {
+function generaBoles(dificultat: string) {
     $decoracio.innerHTML = '';
     const numBoles = quantitats[dificultat] || 40;
 
@@ -39,7 +35,4 @@ function generaBoles(dificultat) {
 // Generar boles decoratives segons dificultat seleccionada
 generaBoles(dificultatSeleccionada);
 
-$play.addEventListener('click', () => location.assign('./src/joc.html'));
-$options.addEventListener('click', () => location.assign('opcions.html'));
-$instructions.addEventListener('click', () => location.assign('instructions.html'));
-$quit.addEventListener('click', () => location.assign('adeu.html'));
+document.querySelector('button#menu')?.addEventListener('click', () => location.assign('../'));
