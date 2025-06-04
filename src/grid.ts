@@ -13,8 +13,14 @@ export class Grid {
         this.#board = Array.from({ length: maxRows }, () => Array(cols).fill(null));
     }
 
-    set(row: number, col: number, bubble: Phaser.Types.Physics.Arcade.ImageWithDynamicBody | null): void {
+    set(row: number, col: number, bubble: Phaser.Types.Physics.Arcade.ImageWithDynamicBody | null): boolean {
+        if (row < 0 || row >= this.#maxRows || col < 0 || col >= this.#cols) {
+            console.warn(`Game Over: intento de acceder a fuera de los límites (${row}, ${col})`);
+            return false;
+        }
+
         this.#board[row][col] = bubble;
+        return true;
     }
 
     get(row: number, col: number): Phaser.Types.Physics.Arcade.ImageWithDynamicBody | null {
@@ -24,13 +30,13 @@ export class Grid {
     maxRow(): number {
         let max = 0;
 
-        this.table();
-
         for (let row = 0; row < this.#board.length; row++) {
-            if (this.#board[row].some(cell => cell !== null)) max = row;
+            if (this.#board[row].some(cell => cell !== null)) {
+                max = row;
+            }
         }
 
-        return max + 1;
+        return max + 1; // Perquè sigui 1-based
     }
 
     table(): void {
@@ -49,7 +55,7 @@ export class Grid {
             const key = `${row},${col}`;
 
             if (!bubble || bubble.tint !== tint || visited.has(key)) return;
-            
+
             visited.add(key);
             connected.push({ row, col, bubble });
 

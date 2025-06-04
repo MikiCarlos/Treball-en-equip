@@ -1,6 +1,6 @@
 export const COLS: number = 15;
 export const ROWS: number = 7;
-export const MAX_ROWS: number = 11;
+export const MAX_ROWS: number = 12;
 
 export const IMAGE_SIZE: number = 32;
 export const POINTS_PER_BUBBLE: number = 200;
@@ -14,6 +14,6 @@ export const TINT_COLORS: Array<number> = [
     0xff00ff  // magenta (nuevo)
 ];
 
-export const SPECIAL_BUBBLE_COLOR = 0xff00ff; 
+export const SPECIAL_BUBBLE_COLOR = 0xffa500; // naranja
 export const WIDTH: number = COLS * IMAGE_SIZE;
 export const HEIGHT: number = MAX_ROWS * 32 + 48 + 100;
