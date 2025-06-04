@@ -1,12 +1,12 @@
 export class Grid {
-    #rows: number;
+    // #rows: number;
     #cols: number;
     #maxRows: number;
 
     #board: Array<Array<Phaser.Types.Physics.Arcade.ImageWithDynamicBody | null>>;
 
-    constructor(rows: number, cols: number, maxRows: number) {
-        this.#rows = rows;
+    constructor(_rows: number, cols: number, maxRows: number) {
+        // this.#rows = rows;
         this.#cols = cols;
         this.#maxRows = maxRows;
 

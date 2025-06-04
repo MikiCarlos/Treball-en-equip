@@ -123,7 +123,7 @@ export class MainGame extends Phaser.Scene {
     }
 
     createNewBubble(color?: number) {
-        const settings = getSettingsByDifficulty();
+        // const settings = getSettingsByDifficulty();
         const isSpecial = Math.random() < 0.1 && this.specialBubblesLeft > 0;
         const bubbleColor = isSpecial
             ? SPECIAL_BUBBLE_COLOR
