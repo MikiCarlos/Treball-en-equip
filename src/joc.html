@@ -6,10 +6,54 @@
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joc</title>
+    <link rel="stylesheet" href="../css/joc.css">
     <script type="module" src="./config.ts"></script>
 </head>
+
 <body>
-    <h1>joc</h1>
-    <div id="joc"></div>
+    <!-- Contenidor del joc -->
+    <div id="gameContainer"></div>
+
+    <!-- Menú de pausa -->
+    <div id="menuPausa" class="pausa" style="display: none;">
+        <div class="pausa-contenidor">
+            <h2 id="titolPausa">Joc en pausa</h2>
+            <button onclick="reprendreJoc()">Reprendre</button>
+            <button onclick="tornarAComençar()">Tornar a començar</button>
+            <button onclick="tornarAlMenu()">Tornar al menú</button>
+        </div>
+    </div>
+
+    <!-- Script del joc -->
+    <script src="../js/joc.js"></script>
+    <script>
+        // ESC per mostrar / ocultar el menú de pausa
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const menu = document.getElementById('menuPausa');
+                const visible = menu.style.display === 'flex';
+                menu.style.display = visible ? 'none' : 'flex';
+
+                if (!visible) {
+                    pintarTitolPausaColorit();
+                }
+            }
+        });
+
+
+        function tornarAlMenu() {
+            window.location.assign("/")
+        }
+
+        function tornarAComençar() {
+            window.location.reload();
+        }
+
+        function reprendreJoc() {
+            document.getElementById('menuPausa').style.display = 'none';
+            // Aquí també es pot reprendre la lògica de Phaser
+        }
+    </script>
 </body>
+
 </html>

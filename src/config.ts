@@ -2,18 +2,19 @@ import Phaser from 'phaser'
 import { HEIGHT, WIDTH } from './constants';
 import { MainGame } from './game';
 
-new Phaser.Game({
+const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: WIDTH,
-    height: HEIGHT,
-    backgroundColor: 0x242424,
-    parent: 'game',
-    scene: [ MainGame ],
+    width: HEIGHT,
+    height: WIDTH,
+    parent: 'gameContainer',
+    backgroundColor: '#222222',
+    scene: [MainGame],
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { x: 0, y: 0 },
             debug: false
         }
     }
-});
+};
+
+new Phaser.Game(config);

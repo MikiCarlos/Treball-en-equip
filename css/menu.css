@@ -1,0 +1,81 @@
+/* Estils generals */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Títol */
+#title {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+/* Menú de botons */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.menu button {
+    width: 15rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+/* Boles decoratives */
+.decoració .bola {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation-name: flotació;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.submenu button {
+    width: 12rem;
+    height: 3rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
+
+/* Colores */
+.vermella { background-color: red; }
+.blava    { background-color: blue; }
+.verda    { background-color: green; }
+.groga    { background-color: yellow; }
+
+/* Animació de flotació */
+@keyframes flotació {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}

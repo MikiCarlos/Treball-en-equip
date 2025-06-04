@@ -1,0 +1,82 @@
+/* Estils generals */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#gameContainer canvas {
+    display: block;
+    margin: auto;
+}
+
+#gameContainer {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Menú de pausa */
+.pausa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Contingut del menú de pausa */
+.pausa-contenidor {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.pausa-contenidor h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.vermella { color: red; }
+.blava    { color: blue; }
+.verda    { color: green; }
+.groga    { color: yellow; }
+
+/* Botons dins del menú de pausa */
+.pausa button {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15rem;
+}
+
+.pausa button:hover {
+    background-color: #555;
+}
+
+/* Animació d'entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
